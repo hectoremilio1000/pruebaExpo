@@ -1,0 +1,13 @@
+diff --git a/node_modules/amazon-cognito-identity-js/ios/RNAWSCognito.h b/node_modules/amazon-cognito-identity-js/ios/RNAWSCognito.h
+index ab6fdce..a9d41e8 100644
+--- a/node_modules/amazon-cognito-identity-js/ios/RNAWSCognito.h
++++ b/node_modules/amazon-cognito-identity-js/ios/RNAWSCognito.h
+@@ -1,4 +1,8 @@
++#if __has_include("RCTBridgeModule.h")
++#import "RCTBridgeModule.h"
++#else
+ #import <React/RCTBridgeModule.h>
++#endif
+ #import <React/RCTLog.h>
+ #import <React/RCTUtils.h>
+ 
