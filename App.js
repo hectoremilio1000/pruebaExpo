@@ -6,6 +6,7 @@ import {
   Button,
   StyleSheet,
   FlatList,
+  SafeAreaView,
 } from "react-native";
 import Estudios from "./src/components/Estudios";
 import * as Linking from "expo-linking";
@@ -14,14 +15,13 @@ import servicios from "./assets/data/servicios";
 import { Amplify, Auth } from "aws-amplify";
 import awsconfig from "./src/aws-exports";
 Amplify.configure(awsconfig);
-import { withAuthenticator } from "aws-amplify-react-native";
 
 const App = () => {
   const onPress = () => {
     Linking.openURL("https://wa.me/+5219511028474");
   };
   return (
-    <View
+    <SafeAreaView
       style={{ padding: 10, flex: 1, backgroundColor: "white", paddingTop: 20 }}
     >
       <Text
@@ -29,10 +29,11 @@ const App = () => {
           textAlign: "center",
           fontWeight: "700",
           fontSize: 16,
-          marginBottom: 5,
+          paddingTop: 10,
+          marginVertical: 10,
         }}
       >
-        Para solicitarlo sólo da click en la prueba
+        Solicita un test a domicilio con un Click
       </Text>
 
       <FlatList
@@ -43,24 +44,11 @@ const App = () => {
       <Pressable onPress={onPress} style={styles.button}>
         <Text style={styles.buttonText}>Otros estudios</Text>
       </Pressable>
-      <View>
-        <Text
-          onPress={() => Auth.signOut()}
-          style={{
-            textAlign: "center",
-            color: "red",
-            margin: 10,
-            marginBottom: "auto",
-          }}
-        >
-          Cerrar sesión
-        </Text>
-      </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
-export default withAuthenticator(App);
+export default App;
 
 const styles = StyleSheet.create({
   button: {

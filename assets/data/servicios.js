@@ -4,13 +4,14 @@ const servicios = [
     titulo: "Prueba COVID PCR en tiempo real",
     category: "covid",
     imagen:
-      "https://img.freepik.com/vector-gratis/prueba-hisopo-nasal_23-2148564123.jpg",
+      "https://img.freepik.com/free-vector/types-coronavirus-rapid-pcr-tests_23-2148545852.jpg",
     precio: 1500,
     oldPrice: 1800,
     descripcionLarga:
-      "Método específico para determinar la presencia del virus. Idealmente se utiliza en pacientes que presentan síntomas agudos para confirmar la enfermedad. Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas. Se requiere la recolección de células infectadas de la nasofaringe y orofaringe del paciente mediante un hisopo. Se requiere ayuno de 4- 5 horas.",
-    descripcioncorta: "Crees tener COVID-19 y tienes o no síntomas.",
-    resultados: "RESULTADOS EN 24 a 48 horas",
+      "Método específico para determinar la presencia del virus.  Es recomendada si el paciente tuvo contacto con una persona diagnosticada, incluso si no presenta síntomas. Se requiere la recolección de células infectadas de la nasofaringe y orofaringe del paciente mediante un hisopo.",
+    descripcioncorta:
+      "Detecta la presencia de material genético viral, la muestra para el análisis se obtiene de la faringe y nasofaringe, siendo la más efectiva para detectar el virus de COVID.",
+    resultados: "RESULTADOS DE 24 a 48 horas",
     comentarios:
       "Prueba más confiable para detectar VIRUS COVID-19. Es la prueba solicitada para fines de viajes e intervenciones médicas, entre otras.",
     tipoMuestra: "Muestra de nariz y garganta",
@@ -22,13 +23,14 @@ const servicios = [
     titulo: "PRUEBA DE ANTÍGENO (prueba rápida)",
     category: "covid",
     imagen:
-      "https://img.freepik.com/vector-gratis/tipo-prueba-coronavirus-medico_23-2148571667.jpg",
+      "https://img.freepik.com/free-vector/family-protected-from-virus_52683-38997.jpg",
     precio: "",
     oldPrice: "",
     tiempoResultado: 30,
     descripcion:
       "Una prueba rápida de antígenos o prueba rápida es una prueba de diagnóstico rápida que directamente detecta la presencia o ausencia de un antígeno, en este caso para detectar la presencia de SARS-CoV-2, el virus que causa COVID-19. Las pruebas rápidas son un tipo de pruebas de flujo lateral que detectan proteínas, lo que las distingue de otras pruebas médicas que detectan anticuerpos (pruebas de anticuerpos) o ácido nucleico (pruebas de ácido nucleico), de tipo laboratorio o punto de atención.",
-    descripcioncorta: "Crees tener COVID-19 y tienes o no síntomas.",
+    descripcioncorta:
+      "Una prueba rápida de antígenos o prueba rápida es una prueba de diagnóstico rápida que directamente detecta la presencia o ausencia de un antígeno, en este caso para detectar la presencia de COVID-19.",
     resultados: "RESULTADOS EN 2 horas",
     comentarios:
       "Si tu resultado es POSITIVO se confirma COVID-19. Si tu resultado es NEGATIVO es necesario realizar una PRUEBA DE PCR",
@@ -46,8 +48,8 @@ const servicios = [
     oldPrice: 70,
     descripcion:
       "Es un método para indicarle cuál es el tipo de sangre que usted tiene. La determinación del grupo sanguíneo se realiza para que usted pueda donar sangre o recibir una transfusión de sangre de manera segura. También se realiza para ver si usted posee una sustancia llamada factor Rh en la superficie de sus glóbulos rojos. No se requiere ayuno para esta prueba.",
-    descripcioncorta: "Quisieras saber que tipo de sangre y factor Rh eres.",
-    resultados: "RESULTADOS EN dos horas",
+    descripcioncorta: "Quieres saber que tipo de sangre y factor Rh eres.",
+    resultados: "RESULTADOS EN 2 horas",
     comentarios: "Es fundamental saber que tipo de sangre y factor contamos.",
     tipoMuestra: "Muestra sanguínea",
     requerimiento: "Ninguno",
@@ -58,12 +60,13 @@ const servicios = [
     titulo: "VDRL",
     category: "rapidas",
     imagen:
-      "https://img.freepik.com/free-vector/venereologist-concept-professional-diagnostic-dermatology-disease-sexually-transmitted-diseases-infection-dermatovenerology-vector-illustration-cartoon-style_613284-1488.jpg",
+      "https://img.freepik.com/free-vector/retrovirusesr-concept-illustration_114360-7567.jpg",
     precio: 70,
     oldPrice: 85,
     descripcion:
       "Es un examen para detectar sífilis, entre otras enfermedades. Mide sustancias (proteínas), llamadas anticuerpos, que su cuerpo puede producir si usted entra en contacto con la bacteria que causa la sífilis.",
-    descripcioncorta: ".",
+    descripcioncorta:
+      "Es un examen para detectar sífilis. Mide sustancias (proteínas), llamadas anticuerpos, que su cuerpo puede producir si usted entra en contacto con la bacteria que causa la sífilis.",
     resultados: "RESULTADOS EN 2 horas",
     comentarios:
       "La Sífilis es una enfermedad de transmisión sexual transmitida por una bacteria.",
@@ -131,7 +134,9 @@ const servicios = [
     oldPrice: 120,
     descripcion:
       "Este examen se hace a la sangre e inspecciona las células que la componen y están presentes en ella como los glóbulos rojos, encargados de transportar oxígeno; los glóbulos blancos, que combaten infecciones, y las plaquetas, que detienen hemorragias mediante la formación de coágulos.",
-    resultados: "RESULTADOS EN el mismo día",
+    resultados: "RESULTADOS EN 2 horas",
+    descripcioncorta:
+      "Obtiene un conteo sanguíneo que permite evaluar información de las células presentes en la sangre.",
     comentarios:
       "La biometría hemática es un auxiliar en el diagnostico y seguimiento de anemias, leucemias, pacientes con quimioterapias, síndrome febril e infecciones.",
     tipoMuestra: "Muestra sanguínea",
@@ -146,7 +151,8 @@ const servicios = [
     oldPrice: 700,
     descripcion:
       "“La química sanguínea es un análisis de la sangre realizado en el laboratorio para medir cantidades de ciertas sustancias en el organismo como sales, enzimas, grasas o lípidos, hormonas, azúcar o glucosa, proteínas, vitaminas y minerales.",
-    descripcioncorta: "Química sanguínea básica",
+    descripcioncorta:
+      "Es una serie de pruebas de sangre que analizan diversos elementos en el suero sanguíneo.",
     resultados: "RESULTADOS EN el mismo día",
     comentarios:
       "Esta prueba ayuda a diagnosticar ciertos problemas de salud. Si los resultados son anormales, puede apuntar a un problema que necesite ser tratado a la brevedad.",

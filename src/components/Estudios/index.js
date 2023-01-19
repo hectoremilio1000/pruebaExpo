@@ -1,6 +1,5 @@
 import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import * as Linking from "expo-linking";
-import servicios from "../../../assets/data/servicios";
 
 const Estudios = ({ servicio }) => {
   const onPress = () => {
@@ -41,9 +40,10 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    aspectRatio: 4 / 3,
+    aspectRatio: 4 / 2,
     marginBottom: 5,
     borderRadius: 10,
+    resizeMode: "cover",
   },
   containerTitulo: {
     width: "70%",
